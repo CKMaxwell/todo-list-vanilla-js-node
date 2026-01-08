@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "ec819d70-5779-4baf-a2e9-f185eb8acfb6",
+		"name": "toDoList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "42561347"
+	},
+	"item": [
+		{
+			"name": "標準get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:3005/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "標準post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"標題2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:3005/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "標準delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:3005/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "標準單獨delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:3005/todos/284908ca-b703-4893-89a7-2f2327bed478"
+			},
+			"response": []
+		},
+		{
+			"name": "標準編輯",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"修改資料\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:3005/todos/474de28f-e935-41bb-973f-647c4b35c4e7"
+			},
+			"response": []
+		}
+	]
+}
